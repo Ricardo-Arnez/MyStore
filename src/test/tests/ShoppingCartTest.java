@@ -5,22 +5,18 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.HomePage;
-import utils.SeleniumUtils;
 
-import java.util.List;
-
-public class HomeTest extends BaseTest {
+public class ShoppingCartTest extends BaseTest {
     HomePage homePage;
 
     @BeforeMethod
-    public void localSetUp(){
+    public void localSetUp() {
         homePage = new HomePage(getDriver());
     }
 
-    @Test(testName = "Validate pop-up text")
-    public void test01(){
+    @Test(testName = "Validate shopping cart")
+    public void test01() {
+        Assert.assertTrue(homePage.shoppingCart.isDisplayed());
 
     }
-
-
 }

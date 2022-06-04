@@ -17,19 +17,6 @@ public class HomePage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//h2[@class='PrivacyDataNotice--heading--2VTdU']")
-    public WebElement popUpText;
-
-    @FindBy(name = "close")
-    public WebElement closePopUpBtn;
-
-    @FindBy(name = "facebook")
-    public WebElement facebookBtn;
-
-    @FindBy(name = "twitter")
-    public WebElement twitterBtn;
-
-    @FindBy(name = "youtube")
-    public WebElement youtubeBtn;
-
+    @FindBy(xpath = "//*[@title='View my shopping cart']")
+    public WebElement shoppingCart;
 }
