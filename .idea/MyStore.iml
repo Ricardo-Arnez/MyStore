@@ -10,21 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../Libs &amp; Drivers/selenium-java-3.141.59" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../Libs &amp; Drivers/selenium-java-3.141.59" />
-        </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../Libs &amp; Drivers/selenium-java-3.141.59" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../Libs &amp; Drivers/selenium-java-3.141.59" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
     <orderEntry type="module-library" scope="TEST">
       <library name="testng">
         <CLASSES>

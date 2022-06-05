@@ -52,4 +52,33 @@ public class HomeTest extends BaseTest {
         Assert.assertEquals(actualTitle, "The Weather Channel - YouTube");
     }
 
+    @Test(testName = "AUT-5: Test Follow us social media buttons - Facebook")
+    public void testAUT0501(){
+        homePage.click(homePage.facebookBtn);
+        String actualTitle = getDriver().getTitle();
+        Assert.assertEquals(actualTitle, "Facebook");
+
+    }
+
+    @Test(testName = "AUT-5: Test Follow us social media buttons - Twitter")
+    public void testAUT0502(){
+        homePage.click(homePage.twitterBtn);
+        String actualTitle = getDriver().getCurrentUrl();
+        Assert.assertTrue(actualTitle.contains("twitter"));
+    }
+
+    @Test(testName = "AUT-5: Test Follow us social media buttons - Youtube")
+    public void testAUT0503(){
+        homePage.click(homePage.youtubeBtn);
+        String actualTitle = getDriver().getCurrentUrl();
+        Assert.assertTrue(actualTitle.contains("youtube"));
+    }
+
+    @Test(testName = "AUT-5: Test Follow us social media buttons - GooglePlus")
+    public void testAUT0504(){
+        homePage.click(homePage.googlePlusBtn);
+        String actualTitle = getDriver().getTitle();
+        Assert.assertEquals(actualTitle, "Google+");
+    }
+
 }

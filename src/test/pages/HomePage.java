@@ -23,13 +23,16 @@ public class HomePage extends BasePage {
     @FindBy(name = "close")
     public WebElement closePopUpBtn;
 
-    @FindBy(name = "facebook")
+    @FindBy(xpath = "//li[@class='facebook']//a")
     public WebElement facebookBtn;
 
-    @FindBy(name = "twitter")
+    @FindBy(xpath = "//li[@class='twitter']//a")
     public WebElement twitterBtn;
 
-    @FindBy(name = "youtube")
+    @FindBy(xpath = "//li[@class='youtube']//a")
     public WebElement youtubeBtn;
+
+    @FindBy(xpath = "//li[@class='google-plus']//a")
+    public WebElement googlePlusBtn;
 
 }
