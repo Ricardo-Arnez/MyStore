@@ -47,12 +47,17 @@ public class BasePage {
 
     public void waitForElementClickability(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+        //wait.until(ExpectedConditions.elementToBeClickable(element));
+        wait.until(a -> ExpectedConditions.elementToBeClickable(element));
+
+
     }
 
     public void waitForElementVisibility(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.visibilityOf(element));
+        // wait.until(ExpectedConditions.visibilityOf(element));
+        wait.until(a -> ExpectedConditions.visibilityOf(element));
+
     }
 
     public void moveIntoView(WebElement element){
