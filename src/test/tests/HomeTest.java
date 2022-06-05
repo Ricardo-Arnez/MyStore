@@ -74,4 +74,11 @@ public class HomeTest extends BaseTest {
         Assert.assertTrue(actualTitle.contains("youtube"));
     }
 
+    @Test(testName = "AUT-5: Test Follow us social media buttons - GooglePlus")
+    public void testAUT0504(){
+        homePage.click(homePage.facebookBtn);
+        String actualTitle = getDriver().getTitle();
+        Assert.assertEquals(actualTitle, "Google+");
+    }
+
 }
