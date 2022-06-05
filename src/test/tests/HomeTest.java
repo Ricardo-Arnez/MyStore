@@ -76,7 +76,7 @@ public class HomeTest extends BaseTest {
 
     @Test(testName = "AUT-5: Test Follow us social media buttons - GooglePlus")
     public void testAUT0504(){
-        homePage.click(homePage.facebookBtn);
+        homePage.click(homePage.googlePlusBtn);
         String actualTitle = getDriver().getTitle();
         Assert.assertEquals(actualTitle, "Google+");
     }
